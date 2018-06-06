@@ -5,3 +5,10 @@ C:\Users\hyunb\Desktop\Parallel\Parallel\obj\Debug\Parallel.csprojResolveAssembl
 C:\Users\hyunb\Desktop\Parallel\Parallel\obj\Debug\Parallel.csproj.CoreCompileInputs.cache
 C:\Users\hyunb\Desktop\Parallel\Parallel\obj\Debug\Parallel.exe
 C:\Users\hyunb\Desktop\Parallel\Parallel\obj\Debug\Parallel.pdb
+C:\Users\hyunb\Desktop\Parallel_Programming\Parallel\Parallel\bin\Debug\Parallel.exe.config
+C:\Users\hyunb\Desktop\Parallel_Programming\Parallel\Parallel\bin\Debug\Parallel.exe
+C:\Users\hyunb\Desktop\Parallel_Programming\Parallel\Parallel\bin\Debug\Parallel.pdb
+C:\Users\hyunb\Desktop\Parallel_Programming\Parallel\Parallel\obj\Debug\Parallel.csprojAssemblyReference.cache
+C:\Users\hyunb\Desktop\Parallel_Programming\Parallel\Parallel\obj\Debug\Parallel.csproj.CoreCompileInputs.cache
+C:\Users\hyunb\Desktop\Parallel_Programming\Parallel\Parallel\obj\Debug\Parallel.exe
+C:\Users\hyunb\Desktop\Parallel_Programming\Parallel\Parallel\obj\Debug\Parallel.pdb
