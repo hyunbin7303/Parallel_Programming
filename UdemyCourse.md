@@ -1,10 +1,9 @@
-# Parallel Programming 
 
 Source : Learn Parallel Programming with C# and .NET     
 By : Dmitri Nesteruk             
 
 *All of this source are based on his lecture in Udemy.*
-
+# Chapter 1 
 ## Task
 - Task is a unit of work that takes a function.
   - new Task(function), t.Start()
@@ -50,4 +49,14 @@ By : Dmitri Nesteruk
   - Use ae.Handle(e=> {...}) to selectively handle exceptions.
     - Return true if handled, false otherwise.
   
+  
+# Chapter 2 - Data Sharing and Synchronization
+* Critical Sections
+* Interlocked Operations
+* Spin Locking and Lock Recursion
+* Mutex    
+* Reader-Writer Locks
+
+* Atomic?
+- An operation is *atomic* if it cannot be interrupted.
   
