@@ -61,19 +61,45 @@ By : Dmitri Nesteruk
 - An operation is *atomic* if it cannot be interrupted.
   
   ## Critical Sections
-  - Uses the lock keyword
-  - Typically locks on an existing object.
-    - Best to make a new object to lock on.
-  
+- Uses the lock keyword
+- Typically locks on an existing object.
+  - Best to make a new object to lock on.
+- A shorthand for Monitor.Enter() / Exit()
+- Blocks until a lock is available 
+
+
+## Interlocked Operations
+- Useful for atomically changing low-level primitives
+- Interlocked.Increment() / Decrement()
+- Interlocked.Add()
+- Exchange() / CompareExchange()
+
+## Spin Locking and Lock Recursion 
+- A spin lock waste CPU cycles without yielding.
+  - Useful for brief pauses to prevent rescheduling.
+- Enter() to take, Exit() release (if taken successfully)
+- Lock Recursion = ability to enter a lock twice on the same thread.
+- SpinLock X support lock recursion.
+- Owner Tracking helps keep a record of thread that acquired the lock.
+
+
+
+
+
   ## mutex  
   Source : https://www.dotnetperls.com/mutex       
   Mutex means mutual exclusion. The mutex type ensures blocks of code are executed only once at a time.
   It provides a way to use system-wide synchronization, and synchoronize 
   threads within a single program.
-  - can be used for interprocess synchronization. 
-  - Two or more threads need to access a shared resource, the system needs a
+- can be used for interprocess synchronization. 
+- Two or more threads need to access a shared resource, the system needs a
   synchronization to ensure that only one thread at a time uses the resource.
   
+  
+- A WaitHandle-derived synchronization primitive
+- WaitOne() to acquire.
+- ReleaseMutex() to release.
+- Mutex.WaitAll() to acquire several
   
   
   ## ReaderWriterLockSlim 
