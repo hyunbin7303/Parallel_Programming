@@ -60,3 +60,31 @@ By : Dmitri Nesteruk
 * Atomic?
 - An operation is *atomic* if it cannot be interrupted.
   
+  ## Critical Sections
+  - Uses the lock keyword
+  - Typically locks on an existing object.
+    - Best to make a new object to lock on.
+  
+  ## mutex  
+  Source : https://www.dotnetperls.com/mutex       
+  Mutex means mutual exclusion. The mutex type ensures blocks of code are executed only once at a time.
+  It provides a way to use system-wide synchronization, and synchoronize 
+  threads within a single program.
+  - can be used for interprocess synchronization. 
+  - Two or more threads need to access a shared resource, the system needs a
+  synchronization to ensure that only one thread at a time uses the resource.
+  
+  
+  
+  ## ReaderWriterLockSlim 
+  resource : https://msdn.microsoft.com/ko-kr/library/system.threading.readerwriterlockslim(v=vs.110).aspx     
+  - Represents a lock that is used to manage access to a resource, allowing multiple threads for reading
+    or exclusive access for writing.
+  - Use this to protect a resource that is read by multiple threads and written to by one
+  thread at a time.
+  
+    
+    
+  
+  
+  
